@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Toko Kosmetik H. SAIFULLAH Pasar Harian</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Katalog</a>
+                <button class="nav-link tutorial-btn" onclick="startTutorial()">
+                    <span>❓</span> Tutorial
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Floating Cart Button -->
+    <button class="floating-cart-btn" id="cartBtn" onclick="toggleCart()">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+
+    <!-- Search & Filter Section -->
+    <section class="filter-section">
+        <div class="filter-row">
+            <button class="category-select-btn" id="categorySelectBtn" onclick="openCategoryModal()">
+                <span class="category-icon">📁</span>
+                <span class="category-text" id="categoryText">Semua Kategori</span>
+                <span class="category-arrow">▼</span>
+            </button>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="🔍 Cari produk...">
+            </div>
+            <button class="view-toggle-btn" id="viewToggleBtn" onclick="toggleViewMode()" title="Ubah Tampilan">
+                <span class="view-icon" id="viewIcon">📋</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Category Modal -->
+    <div class="modal-overlay" id="categoryModal">
+        <div class="modal-content category-modal-content">
+            <button class="modal-close" onclick="closeCategoryModal()">✕</button>
+            <div class="modal-header">
+                <h2>📁 Pilih Kategori</h2>
+            </div>
+            <div class="modal-body">
+                <div class="category-grid" id="categoryGrid">
+                    <!-- Categories will be generated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <main class="main-content">
+        <div class="products-info">
+            <span id="productsCount">0 produk</span>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be generated dynamically -->
+        </div>
+        <div class="no-products" id="noProducts" style="display: none;">
+            <span class="no-products-icon">😕</span>
+            <p>Produk tidak ditemukan</p>
+            <button onclick="resetFilters()" class="reset-btn">Reset Filter</button>
+        </div>
+    </main>
+
+    <!-- Variant Modal -->
+    <div class="modal-overlay" id="variantModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVariantModal()">✕</button>
+            <div class="modal-header">
+                <div class="modal-product-image">📦</div>
+                <h2 class="modal-product-name" id="modalProductName"></h2>
+                <span class="modal-product-category" id="modalProductCategory"></span>
+            </div>
+            <div class="modal-body">
+                <p class="variant-label">Pilih Varian:</p>
+                <div class="variant-options" id="variantOptions">
+                    <!-- Variants will be generated dynamically -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn cart-add-btn" id="modalCartBtn" onclick="addToCartFromModal()">
+                    <span>🛒</span> Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add to Cart Modal (Quantity & Notes) -->
+    <div class="modal-overlay" id="addCartModal">
+        <div class="modal-content add-cart-modal-content">
+            <button class="modal-close" onclick="closeAddCartModal()">✕</button>
+            <div class="modal-header">
+                <div class="modal-product-image" id="addCartModalImage">📦</div>
+                <h2 class="modal-product-name" id="addCartModalName"></h2>
+                <span class="modal-product-category" id="addCartModalCategory"></span>
+                <span class="modal-product-variant" id="addCartModalVariant"></span>
+            </div>
+            <div class="modal-body">
+                <!-- Quantity Section -->
+                <div class="qty-section">
+                    <p class="qty-label">Jumlah:</p>
+                    <div class="qty-controls">
+                        <button class="qty-ctrl-btn" onclick="decreaseModalQty()">−</button>
+                        <span class="qty-display" id="modalQtyDisplay">1</span>
+                        <button class="qty-ctrl-btn" onclick="increaseModalQty()">+</button>
+                    </div>
+                </div>
+                <!-- Notes Section -->
+                <div class="notes-section">
+                    <p class="notes-label">📝 Catatan (boleh tidak diisi):</p>
+                    <textarea id="productNotes" class="notes-input" placeholder="Contoh: Warna Merah, Ukuran XL, dll..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn cart-add-btn" onclick="confirmAddToCart()">
+                    <span>🛒</span> Tambahkan ke Keranjang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>🛒 Keranjang Belanja</h2>
+            <button class="cart-close" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be generated dynamically -->
+        </div>
+        <div class="cart-empty" id="cartEmpty">
+            <span class="cart-empty-icon">🛒</span>
+            <p>Keranjang masih kosong</p>
+            <span class="cart-empty-hint">Tambahkan produk untuk mulai belanja</span>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                <span>Total Item:</span>
+                <span id="cartTotalItems">0 item</span>
+            </div>
+            
+            <!-- Pickup Time Selection -->
+            <div class="pickup-time-section">
+                <p class="pickup-label">📅 Kapan pesanan diambil?</p>
+                <div class="pickup-options">
+                    <label class="pickup-option">
+                        <input type="radio" name="pickupTime" value="Hari Ini" checked>
+                        <span class="pickup-radio"></span>
+                        <span>Hari Ini</span>
+                    </label>
+                    <label class="pickup-option">
+                        <input type="radio" name="pickupTime" value="Besok">
+                        <span class="pickup-radio"></span>
+                        <span>Besok</span>
+                    </label>
+                    <label class="pickup-option">
+                        <input type="radio" name="pickupTime" value="custom">
+                        <span class="pickup-radio"></span>
+                        <span>Tentukan Sendiri</span>
+                    </label>
+                </div>
+                <input type="text" id="customPickupTime" class="custom-pickup-input" placeholder="Contoh: Jumat sore, Minggu pagi..." style="display: none;">
+            </div>
+            
+            <button class="checkout-btn" onclick="checkoutWhatsApp()">
+                <span>📱</span> Checkout via WhatsApp
+            </button>
+            <button class="clear-cart-btn" onclick="clearCart()">
+                🗑️ Kosongkan Keranjang
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Produk ditambahkan ke keranjang</span>
+    </div>
+
+    <!-- Alphabet Sidebar -->
+    <div class="alphabet-sidebar" id="alphabetSidebar">
+        <div class="alphabet-list">
+            <span class="alpha-letter" data-letter="A">A</span>
+            <span class="alpha-letter" data-letter="B">B</span>
+            <span class="alpha-letter" data-letter="C">C</span>
+            <span class="alpha-letter" data-letter="D">D</span>
+            <span class="alpha-letter" data-letter="E">E</span>
+            <span class="alpha-letter" data-letter="F">F</span>
+            <span class="alpha-letter" data-letter="G">G</span>
+            <span class="alpha-letter" data-letter="H">H</span>
+            <span class="alpha-letter" data-letter="I">I</span>
+            <span class="alpha-letter" data-letter="J">J</span>
+            <span class="alpha-letter" data-letter="K">K</span>
+            <span class="alpha-letter" data-letter="L">L</span>
+            <span class="alpha-letter" data-letter="M">M</span>
+            <span class="alpha-letter" data-letter="N">N</span>
+            <span class="alpha-letter" data-letter="O">O</span>
+            <span class="alpha-letter" data-letter="P">P</span>
+            <span class="alpha-letter" data-letter="Q">Q</span>
+            <span class="alpha-letter" data-letter="R">R</span>
+            <span class="alpha-letter" data-letter="S">S</span>
+            <span class="alpha-letter" data-letter="T">T</span>
+            <span class="alpha-letter" data-letter="U">U</span>
+            <span class="alpha-letter" data-letter="V">V</span>
+            <span class="alpha-letter" data-letter="W">W</span>
+            <span class="alpha-letter" data-letter="X">X</span>
+            <span class="alpha-letter" data-letter="Y">Y</span>
+            <span class="alpha-letter" data-letter="Z">Z</span>
+        </div>
+    </div>
+
+    <!-- Tutorial Onboarding Overlay -->
+    <div class="tutorial-overlay" id="tutorialOverlay">
+        <div class="tutorial-backdrop"></div>
+        <div class="tutorial-highlight" id="tutorialHighlight"></div>
+        <div class="tutorial-tooltip" id="tutorialTooltip">
+            <div class="tutorial-step-indicator">
+                <span id="tutorialStepNum">1</span> / <span id="tutorialTotalSteps">5</span>
+            </div>
+            <h3 class="tutorial-title" id="tutorialTitle"></h3>
+            <p class="tutorial-desc" id="tutorialDesc"></p>
+            <div class="tutorial-actions">
+                <button class="tutorial-skip-btn" onclick="skipTutorial()">Lewati</button>
+                <button class="tutorial-next-btn" onclick="nextTutorialStep()" id="tutorialNextBtn">Lanjut</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

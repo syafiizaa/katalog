@@ -884,7 +884,7 @@ const tutorialSteps = [
     {
         target: '.floating-cart-btn',
         title: '🛒 Keranjang Belanja',
-        desc: 'Tekan tombol ini untuk melihat keranjang belanja Anda dan checkout via WhatsApp.',
+        desc: 'Tekan tombol ini untuk melihat keranjang belanja Anda dan Kirim Pesanan anda ke WA kami secara cepat tanpa ribet.',
         position: 'left'
     }
 ];

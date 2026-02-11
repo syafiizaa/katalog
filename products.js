@@ -1161,10 +1161,16 @@ const productsData = [
     "varian": "Silver"
   },
   {
-    "gambar": "https://down-id.img.susercontent.com/file/id-11134207-7rasj-m15f83n8ibwzaa",
+    "gambar": null,
     "kategori": "Parfum",
-    "nama": "Fresh Natural cologne 100ml",
-    "varian": null
+    "nama": "Fresh Natural 100ml",
+    "varian": "Cologne"
+  },
+  {
+    "gambar": null,
+    "kategori": "Parfum",
+    "nama": "Fresh Natural 100ml",
+    "varian": "EDT Kaca"
   },
   {
     "gambar": null,
@@ -2355,10 +2361,16 @@ const productsData = [
     "varian": "75ml"
   },
   {
+    "gambar": null,
+    "kategori": "Kosmetik",
+    "nama": "Minyak Zaitun Purbasari",
+    "varian": "150ml"
+  },
+  {
     "gambar": "https://img.lazcdn.com/g/p/e90a5f640cd47bc33db0338ca2df0705.jpg_960x960q80.jpg_.webp",
     "kategori": "Kosmetik",
     "nama": "Minyak Zaitun Purbasari",
-    "varian": null
+    "varian": "75ml"
   },
   {
     "gambar": null,
@@ -2649,10 +2661,16 @@ const productsData = [
     "varian": "Sedang"
   },
   {
-    "gambar": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcTj3kLQOA1c0XESBpaz_rABhKJO8Ovm_7DMTYDTQObA5A\u0026s\u003d10",
+    "gambar": null,
     "kategori": "Parfum",
     "nama": "Parfum Evangeline 100ml",
-    "varian": null
+    "varian": "EDC Plastik"
+  },
+  {
+    "gambar": null,
+    "kategori": "Parfum",
+    "nama": "Parfum Evangeline 100ml",
+    "varian": "EDP Kaca"
   },
   {
     "gambar": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcRfManPcrP-KQsVQoOvOe3mHlrjt3rgoeNlP7Le4khiew\u0026s",
@@ -3075,10 +3093,16 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcT1wzx1tnS8wPSECgzE0KFEm3I1YGYa368RoTLH7AOj5Q\u0026s\u003d10",
+    "gambar": null,
     "kategori": "Alat Kebersihan",
-    "nama": "Rapika Botol",
-    "varian": null
+    "nama": "Rapika",
+    "varian": "Botol"
+  },
+  {
+    "gambar": null,
+    "kategori": "Alat Kebersihan",
+    "nama": "Rapika",
+    "varian": "Refill"
   },
   {
     "gambar": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcQibuRLAJNJE0xzB0wrsDr-yAeThHFJvnLgiVmbyK-d-Q\u0026s\u003d10",
@@ -3233,7 +3257,7 @@ const productsData = [
   {
     "gambar": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcRE-8AD-vq6dmb2DWE2lupnK1ClYnkqjIu_vvj1m1sGYg\u0026s\u003d10",
     "kategori": "Sabun",
-    "nama": "Refill Nuvo Giv mini",
+    "nama": "Refill Nuvo / Giv mini",
     "varian": null
   },
   {
@@ -4146,7 +4170,7 @@ const productsData = [
     "gambar": "https://img.lazcdn.com/g/p/09f9a60765ce86177280662c12b1ef07.jpg_720x720q80.jpg",
     "kategori": "Alat",
     "nama": "Sisir Plastik Coklat",
-    "varian": null
+    "varian": "Kecil"
   },
   {
     "gambar": null,
@@ -4261,6 +4285,12 @@ const productsData = [
     "kategori": "Kosmetik",
     "nama": "Spons x-pert",
     "varian": null
+  },
+  {
+    "gambar": null,
+    "kategori": "Alat",
+    "nama": "Staples",
+    "varian": "Kecil"
   },
   {
     "gambar": null,

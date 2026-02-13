@@ -81,7 +81,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/amplop.jpg",
     "kategori": "Alat",
     "nama": "Amplop",
     "varian": "Biasa"
@@ -273,7 +273,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/bedak%20emina.jpg",
     "kategori": "Kosmetik",
     "nama": "Bedak Emina",
     "varian": "Compact Powder"
@@ -327,7 +327,7 @@ const productsData = [
     "varian": "50g"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/marcks.jpg",
     "kategori": "Kosmetik",
     "nama": "Bedak Marcks",
     "varian": "Tabur"
@@ -429,7 +429,7 @@ const productsData = [
     "varian": "Loose"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/bedak%20skiva.jpg",
     "kategori": "Kosmetik",
     "nama": "Bedak Skiva 21",
     "varian": null
@@ -555,7 +555,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/camelia.jpg",
     "kategori": "Parfum",
     "nama": "Camelia eau de parfum",
     "varian": "125ml"
@@ -963,7 +963,7 @@ const productsData = [
     "varian": "60g"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/dolby.jpg",
     "kategori": "Kosmetik",
     "nama": "Dolby",
     "varian": "Panjang"
@@ -1029,7 +1029,7 @@ const productsData = [
     "varian": "500ml"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/emina%20toner.jpg",
     "kategori": "Kosmetik",
     "nama": "Emina Bright Stuff 100ml",
     "varian": "Face Toner"
@@ -1545,7 +1545,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/jepit%20baju.jpg",
     "kategori": "Alat",
     "nama": "Jepit baju",
     "varian": "Biasa"
@@ -1563,7 +1563,7 @@ const productsData = [
     "varian": "Biasa Besar"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/jepit%20kuku.jpg",
     "kategori": "Alat",
     "nama": "Jepit kuku",
     "varian": "Biasa Kecil"
@@ -1629,7 +1629,7 @@ const productsData = [
     "varian": "30g"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/kapas.jpg",
     "kategori": "Kosmetik",
     "nama": "Kapas Muka",
     "varian": "Kharisma"
@@ -1827,7 +1827,7 @@ const productsData = [
     "varian": "75g"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/lip%20cream.jpg",
     "kategori": "Kosmetik",
     "nama": "Lip Cream",
     "varian": "Hanasui"
@@ -1887,7 +1887,7 @@ const productsData = [
     "varian": "250ml"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/lovillea%20series.jpg",
     "kategori": "Parfum",
     "nama": "Lovilla",
     "varian": "Body Mits"
@@ -1899,7 +1899,7 @@ const productsData = [
     "varian": "EDP Kaca"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/lulur.jpg",
     "kategori": "Kosmetik",
     "nama": "Lulur",
     "varian": "Ovale"
@@ -2127,7 +2127,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/mascara%20Maybelline.jpg",
     "kategori": "Kosmetik",
     "nama": "Mascara Maybelline",
     "varian": "Colossal"
@@ -2163,7 +2163,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/mesin%20nyamuk.jpg",
     "kategori": "Obat Nyamuk",
     "nama": "Mesin Nyamuk Liquid Elektrik",
     "varian": "Hit"
@@ -2247,7 +2247,7 @@ const productsData = [
     "varian": "60ml"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/mesin%20nyamuk.jpg",
     "kategori": "Minyak Rambut",
     "nama": "Minyak Rambut",
     "varian": "Clear Men"
@@ -2661,7 +2661,7 @@ const productsData = [
     "varian": "Sedang"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/evangeline.jpg",
     "kategori": "Parfum",
     "nama": "Parfum Evangeline 100ml",
     "varian": "EDC Plastik"
@@ -2751,7 +2751,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/pentel%20dot.jpg",
     "kategori": "Baby Care",
     "nama": "Pentel Dot bayi",
     "varian": "Cussons"
@@ -3165,7 +3165,7 @@ const productsData = [
     "varian": "400ml"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/refill%20hit.jpg",
     "kategori": "Obat Nyamuk",
     "nama": "Refill Hit",
     "varian": "Liquid"
@@ -3393,7 +3393,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/sabun%20batang%20dws.jpg",
     "kategori": "Sabun",
     "nama": "Sabun batang",
     "varian": "Citra"
@@ -3441,7 +3441,7 @@ const productsData = [
     "varian": "Thai"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/sabun%20batang%20bayi.jpg",
     "kategori": "Baby Care",
     "nama": "Sabun batang Bayi",
     "varian": "Cussons"
@@ -3699,7 +3699,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/pepaya.jpg",
     "kategori": "Sabun",
     "nama": "Sabun Pepaya",
     "varian": "Besar"
@@ -3861,7 +3861,7 @@ const productsData = [
     "varian": "Top Lady"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/serum.jpg",
     "kategori": "Kosmetik",
     "nama": "Serum",
     "varian": "Garnier sachet 7.5ml"
@@ -4131,7 +4131,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/silet.jpg",
     "kategori": "Alat",
     "nama": "Silet",
     "varian": "Goal"
@@ -4155,7 +4155,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/sisir%20kutu.jpg",
     "kategori": "Alat",
     "nama": "Sisir kutu",
     "varian": "Besi"
@@ -4257,7 +4257,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/spons%20mandi.jpg",
     "kategori": "Alat Kebersihan",
     "nama": "Spons mandi",
     "varian": "20g"
@@ -4287,13 +4287,13 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://siopen.balangankab.go.id/storage/merchant/products/2024/04/24/5fad1c60f85a0383a18c72f750cdba65.jpg",
     "kategori": "Alat",
     "nama": "Staples",
     "varian": "Kecil"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/stella.jpg",
     "kategori": "Alat Kebersihan",
     "nama": "Stella gantung",
     "varian": "All in One"
@@ -4527,7 +4527,7 @@ const productsData = [
     "varian": "Besar"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/tisu.jpg",
     "kategori": "Alat Kebersihan",
     "nama": "Tisu",
     "varian": "Jolly Kecil"
@@ -4575,7 +4575,7 @@ const productsData = [
     "varian": "Tonic/Milk"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/tull%20jye.jpg",
     "kategori": "Kosmetik",
     "nama": "Tull Jye",
     "varian": "Cream Day+Night"
@@ -4749,7 +4749,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/vivel.jpg",
     "kategori": "Parfum",
     "nama": "Vivelle EDT",
     "varian": "Glass 100ml"
@@ -4851,7 +4851,7 @@ const productsData = [
     "varian": "Day"
   },
   {
-    "gambar": "https://nihonmart.id/pub/media/catalog/product/cache/8a3fa81d90974d9a7299f2eff309979f/c/r/crystal_secret_foaming_cleanser_2-min.png",
+    "gambar": "https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcRlsWBgOkmMZpLV2ch1fV4H_-WrwVGJZ1zN2ddihaHVSTIWTVWEVmxvS-A\u0026s\u003d10",
     "kategori": "Kosmetik",
     "nama": "Wardah Crystal Secret foaming cleanser 100ml",
     "varian": null

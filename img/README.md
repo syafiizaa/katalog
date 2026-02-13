@@ -1,1 +1,0 @@
-isi gambar untuk katalog

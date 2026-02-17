@@ -153,7 +153,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/cologne%20baby.jpg",
     "kategori": "Baby Care",
     "nama": "Baby cologne 100ml",
     "varian": "Cussons"
@@ -417,7 +417,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/sariayu.jpg",
     "kategori": "Kosmetik",
     "nama": "Bedak Sariayu",
     "varian": "Compact"
@@ -1161,7 +1161,7 @@ const productsData = [
     "varian": "Silver"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/fresh.jpg",
     "kategori": "Parfum",
     "nama": "Fresh Natural 100ml",
     "varian": "Cologne"
@@ -2385,7 +2385,7 @@ const productsData = [
     "varian": "50ml"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/morris.jpg",
     "kategori": "Parfum",
     "nama": "Morris Eau De Parfume",
     "varian": "60ml"
@@ -3093,7 +3093,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/rapika.jpg",
     "kategori": "Alat Kebersihan",
     "nama": "Rapika",
     "varian": "Botol"
@@ -3813,7 +3813,7 @@ const productsData = [
     "varian": "Toner"
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/semir.jpg",
     "kategori": "Kosmetik",
     "nama": "Semir",
     "varian": "Bigen"
@@ -4239,12 +4239,6 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
-    "kategori": "Kosmetik",
-    "nama": "Spons beauty nine",
-    "varian": null
-  },
-  {
     "gambar": "https://id-live-01.slatic.net/p/8099dc699abee9b59d0b4183b201b52d.png",
     "kategori": "Kosmetik",
     "nama": "Spons Candy",
@@ -4647,7 +4641,7 @@ const productsData = [
     "varian": null
   },
   {
-    "gambar": null,
+    "gambar": "https://raw.githubusercontent.com/syafiizaa/katalog/refs/heads/main/img/vitalis.jpg",
     "kategori": "Parfum",
     "nama": "Vitalis",
     "varian": "Eau De Glamour hijab chic 100ml"
